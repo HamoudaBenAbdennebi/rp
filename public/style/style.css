@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+nav img {
+  width: 75px;
+  margin-left: 50px;
+}
+nav {
+  background-color: black;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav div {
+  margin-right: 50px;
+}
+nav div a {
+  text-decoration: none;
+  color: white;
+  border: 2px solid transparent;
+  padding: 2px 0;
+  margin: 0 5px;
+  transition: 0.2s;
+}
+nav div button {
+  text-decoration: none;
+  color: white;
+  border: 2px solid transparent;
+  padding: 2px 0;
+  margin: 0 5px;
+  transition: 0.2s;
+}
+nav div .hv:hover {
+  border-bottom-color: #e01261;
+}
+.small-menu i {
+  transition: 0.2s;
+  font-size: 20px;
+}
+.small-menu i:hover {
+  transform: rotate(90deg);
+}
+@media screen and (max-width: 600px) {
+  .small-menu {
+    display: block;
+  }
+  .links {
+    display: none;
+  }
+}
+@media screen and (min-width: 600px) {
+  .small-menu {
+    display: none;
+  }
+  .links {
+    display: flex;
+  }
+}
+.menu {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  z-index: 1;
+}
+.menu .lik {
+  color: white;
+  text-decoration: none;
+  height: 23%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+}
+
+.closeDiv {
+  height: 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.menu .lik:hover {
+  background-color: #e01261;
+}
+.close {
+  animation: goupmenu 0.6s;
+  top: -100%;
+}
+.open {
+  animation: godownmenu 0.6s;
+  top: 0;
+}
+.start {
+  top: -100%;
+}
+button {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+.closeDiv button {
+  color: #e01261;
+  margin-right: 20px;
+  font-size: 30px;
+}
+@keyframes godownmenu {
+  0% {
+    top: -100%;
+  }
+  100% {
+    top: 0;
+  }
+}
+@keyframes goupmenu {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: -100%;
+  }
+}
+.closeDiv img {
+  width: 65px;
+  margin-left: 20px;
+}
+
+/* ! rules*/
+.main-rules {
+  background-color: #232323;
+  color: white;
+}
+.main-rules h1 {
+  font-size: 50px;
+  padding: 50px;
+}
+
+.first-commit-rules {
+  margin: 0 50px;
+  color: #e01261;
+}
+
+.rules-png {
+  width: 50px;
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+  z-index: 0;
+}
+.in-game-rules {
+  padding: 0 50px;
+  margin-top: 20px;
+}
+.in-game-rules h2 {
+  font-size: 30px;
+}
+ul {
+  margin-left: 20px;
+}
+.in-game-rules ul li,
+.in-game-rules ul ul {
+  padding: 5px 20px;
+}
+.imp {
+  color: #e01261;
+}
+.spe-msg {
+  color: #e01261;
+  text-decoration: underline;
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+.imp2 {
+  color: #e01261;
+}
+td,
+th {
+  padding: 10px;
+  border: 1px solid white;
+}
+th {
+  background-color: #e01261;
+}
+.appMain {
+  background-color: #ebebeb;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.cards {
+  max-width: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.cards a {
+  margin: 20px;
+  background-color: #e01261;
+  border-radius: 25px;
+  color: white;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  padding: 20px;
+  transition: 0.2s;
+}
+.cards a:hover {
+  background-color: #bd1f5b;
+}
+@media screen and (max-width: 750px) {
+  .appSerDiv {
+    display: none;
+  }
+}
+@media screen and (min-width: 750px) {
+  .appSerDiv {
+    display: flex;
+  }
+}
